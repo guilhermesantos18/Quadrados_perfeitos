@@ -1,17 +1,16 @@
 from math import sqrt
 
-global num
-
 
 def find_next_square(sq):
-    global num
     if sqrt(sq) == int:
         num = sqrt(sq) + 1
-        result = num**2
-        print(result)
+        result = int(num**2)
         return result
-    elif sqrt(sq) == float:
-        return -1
 
 
-find_next_square(122)
+print(f'O proximo quadrado perfeito de 121 é {find_next_square(121)}')
+print(f'O proximo quadrado perfeito de 625 é {find_next_square(625)}')
+print(f'O proximo quadrado perfeito de 319225 é {find_next_square(319225)}')
+print(f'O proximo quadrado perfeito de 15241383936 é {find_next_square(15241383936)}')
+print(f'O proximo quadrado perfeito de 155 é {find_next_square(155)}')
+print(f'O proximo quadrado perfeito de 342786627 é {find_next_square(342786627)}')
